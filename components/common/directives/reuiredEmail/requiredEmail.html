@@ -1,0 +1,9 @@
+<input ng-model="model"
+       name="required_{{name}}"
+       type="email"
+       placeholder="{{placeholder}}"
+       required/>
+<div class="tooltiptext" ng-show="form['required_'+name].$touched">
+  <p ng-show="form['required_'+name].$error.required">The field is required.</p>
+  <p ng-show="form['required_'+name].$error.email">Invalid email format.</p>
+</div>

@@ -1,0 +1,6 @@
+<input ng-model="model" name="required_{{name}}" class="phone" type="text" placeholder="{{placeholder}}" required/>
+<div class="tooltiptext" ng-show="form['required_'+name].$touched">
+  <p ng-show="form['required_'+name].$error.required">The field is required.</p>
+</div>
+
+

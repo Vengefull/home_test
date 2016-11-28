@@ -1,0 +1,52 @@
+<div class="container">
+  <form name="landingForm">
+    <div class="row">
+      <div class="left">
+        <required-input name="'firstName'"
+                        ng-model="ctrl.firstName"
+                        placeholder="'First Name'"></required-input>
+      </div>
+      <div class="right">
+        <required-input name="'lastName'"
+                        ng-model="ctrl.lastName"
+                        placeholder="'Last Name'"></required-input>
+      </div>
+    </div>
+    <div class="row">
+      <required-email name="'email'"
+                      ng-model="ctrl.email"
+                      placeholder="'Email'"></required-email>
+    </div>
+    <!--има и по-красив начин ама css not even once -->
+    <div class="row">
+      <div class="left countries">
+        <select name="countries"
+                ng-model="ctrl.userCountryOptions"
+                ng-options="country as '+'+country.phoneCode for country in ctrl.countries"
+                ng-init="ctrl.userCountryOptions = ctrl.countries[0]">
+        </select>
+      </div>
+      <div class="right phone">
+        <required-phone name="'userPhone'"
+                        ng-model="ctrl.userPhone"
+                        placeholder="'Phone'"></required-phone>
+      </div>
+    </div>
+
+    <div class="row">
+      <password ng-model="ctrl.userPassword"
+                placeholder="'Password'"></password>
+    </div>
+    <div class="row">
+      <repeat-password ng-model="ctrl.repeatPassword"
+                       placeholder="'Retype Password'"
+                       pattern="ctrl.userPassword"></repeat-password>
+    </div>
+    <div class="row">
+      <button ng-click="ctrl.submit()">I am done</button>
+    </div>
+    <div class="row">
+      <p class="error" ng-repeat="err in ctrl.errMessages">{{err}}</p>
+    </div>
+  </form>
+</div>

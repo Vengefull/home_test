@@ -1,0 +1,7 @@
+node_modules/*
+node_modules/jspm/node_modules/uglify-js/node_modules/yargs/node_modules/cliui/node_modules/right-align/node_modules/align-text/node_modules/longest/LICENSE
+jspm_packages/*
+.idea/*
+.idea/compiler.xml
+.idea/copyright/profiles_settings.xml
+.idea/*

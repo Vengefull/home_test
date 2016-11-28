@@ -1,0 +1,138 @@
+body{
+    width: 40%;
+    margin:auto;
+    background-color: gainsboro;
+}
+.container{
+    text-align: center;
+    margin-top: 10%;
+    background-color: #efefef;
+    padding: 5%;
+}
+.row{
+    width: 100%;
+    display: inline-block;
+}
+
+.left{
+    float: left;
+    text-align: right;
+    width: 50%;
+    display: inline-block;
+}
+.left.countries{
+    float: left;
+    text-align: right;
+    width: 34%;
+    display: inline-block;
+}
+select{
+    width: 36%;
+    height: 36px;
+}
+.right{
+    float: right;
+    text-align: left;
+    width:50%;
+    display: inline-block;
+
+}
+.right.phone{
+    width: 66%;
+
+}
+
+input[type='text']{
+    display: inline-block;
+    width: 50%;
+    margin: 0 5% 0 5%;
+    height: 30px;
+}
+input.phone{
+    width: 61%;
+    height: 30px;
+}
+input[type='email']{
+    display: inline-block;
+    margin: 1%;
+    width: 56%;
+    height: 30px;
+
+}
+input[type='password']{
+    display: inline-block;
+    margin: 1%;
+    height: 30px;
+    width: 56%;
+
+}
+
+div{
+    position: relative;
+}
+div.tooltiptext{
+    position: absolute;
+    top:0;
+}
+div.tooltiptext p{
+    margin :0;
+    padding:0;
+}
+
+div.row div.right .tooltiptext{
+    left: 58%;
+    right: -7%;
+    background-color: #ff5f5f;
+    opacity: 0.8;
+    top:0;
+}
+div.row div.right.phone .tooltiptext{
+    left: 68%;
+    background-color: #ff5f5f;
+    opacity: 0.8;
+    top:0;
+}
+div.row div.left .tooltiptext{
+    left: -52%;
+    background-color: #ff5f5f;
+    opacity: 0.8;
+    top: 0;
+    right: 60%;
+}
+div.row .tooltiptext{
+    background-color: #ff5f5f;
+    left: -26%;
+    right: 80%;
+    top: 6px;
+    opacity: 0.8;
+}
+button{
+    border-radius: 10px;
+    color: white;
+    width: 57%;
+    background-color: #608B61;
+    border: 0;
+    height: 50px;
+    cursor: pointer;
+}
+button:hover{
+    border-radius: 10px;
+    color: white;
+    width: 57%;
+    background-color: #449d44;
+    border: 0;
+    height: 50px;
+    cursor: pointer;
+}
+button:disabled{
+    border-radius: 10px;
+    color: white;
+    width: 57%;
+    background-color: #b3b7b3;
+    border: 0;
+    height: 50px;
+    cursor: default;
+}
+p.error{
+    background-color: #ff5f5f;
+}
